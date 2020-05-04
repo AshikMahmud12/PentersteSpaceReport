@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", Helvetica, sans-serif;
+    background: #343c41;
+    color: white;
+}
+
+#reportingSection {
+    margin-top: 4rem;
+}
+/* Reporting Page Section start */
+/* Title Section Start */
+.titlePart {
+    margin-top: 3rem;
+    display: flex;
+    background: #292e32;
+    width: 45rem;
+    height: 5rem;
+    margin-left: 20rem;
+    padding: 1rem;
+}
+
+.firstItem {
+    margin-left: 2rem;
+}
+.secondItem {
+    margin-left: 14rem;
+}
+.secondItem p:first-child {
+    margin-bottom: 0rem;
+}
+.secondItem p:last-child {
+    color: #acacb0;
+}
+
+.fifthItem {
+    margin-left: 6rem;
+}
+
+/* Title Section End */
+
+/* Company  Section Start */
+.icon {
+    width: 3.4rem;
+
+    height: 3.3rem;
+    line-height: 3rem;
+    display: inline-block;
+    font-size: 3rem;
+}
+
+.icon-bg {
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 100%;
+    text-align: center;
+    color: #292e32;
+}
+.companySection {
+    display: flex;
+    margin-left: 10rem;
+    margin-top: 1rem;
+    background: #292e32;
+    width: 45rem;
+    height: 5rem;
+    margin-left: 20rem;
+    padding: 1rem;
+}
+.companySection p {
+    margin-right: 1rem;
+}
+
+.first {
+    margin-left: 10.9rem;
+}
+.second {
+    margin-left: 8rem;
+}
+
+.fifth {
+    margin-left: 10rem;
+}
+.appleLink {
+    font-size: 1.5rem;
+}
+.icon img {
+    height: 2.2rem;
+    width: 2.2rem;
+}
+.googleFirst {
+    margin-left: 10rem;
+}
+/* Company  Section End */
+
+/* Reporting Page Section End */
+/* Apple Section Start */
+.container {
+    margin-left: 10rem;
+    margin-top: 4rem;
+}
+.appleCompany {
+    display: flex;
+    width: 60rem;
+    height: 10rem;
+    background: #292e32;
+    align-items: center;
+}
+.container .appleIcon {
+    width: 6rem;
+    font-size: 6rem;
+    height: 6.3rem;
+    margin-left: 4rem;
+}
+
+.appleItem {
+    flex-direction: column;
+    margin-left: 1.5rem;
+}
+
+.applebutton {
+    height: 3rem;
+    margin-left: 25rem;
+    font-size: 1.5rem;
+}
+
+/* Apple Section End */
+/* Google Section Start */
+
+.googleCompany {
+    display: flex;
+    width: 60rem;
+    height: 10rem;
+    background: #292e32;
+    align-items: center;
+}
+.container .googleIcon {
+    width: 6rem;
+    font-size: 6rem;
+    height: 6.3rem;
+    margin-left: 4rem;
+}
+.googleIcon img {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 1rem;
+}
+
+.googleItem {
+    flex-direction: column;
+    margin-left: 1.5rem;
+}
+
+.googlebutton {
+    height: 3rem;
+    margin-left: 25rem;
+    font-size: 1.5rem;
+}
+
+/* Google Section End */
+
+.container2Section {
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+/* Weak Section Start */
+.weakPoint {
+    border: 1px solid white;
+}
+/* Weak Section End */
+
+/* Concept Section Start */
+.conceptSection {
+    margin-top: 10rem;
+}
+.proofConceptPart {
+    margin-top: 20rem;
+}
+#title {
+    padding: 0.5rem;
+    width: 55rem;
+}
+#description {
+    padding: 0.5rem;
+    width: 55rem;
+}
+/* Concept Section End */
