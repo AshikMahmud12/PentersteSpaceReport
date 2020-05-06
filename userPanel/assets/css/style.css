@@ -99,7 +99,7 @@ body {
 /* Reporting Page Section End */
 /* Apple Section Start */
 .container {
-    margin-left: 10rem;
+    margin-left: 19rem;
     margin-top: 4rem;
 }
 .appleCompany {
@@ -166,9 +166,27 @@ body {
     margin-left: 3rem;
     margin-right: 3rem;
 }
+
+/* Asset Section Start */
+.assetSection {
+    border: 1px solid white;
+    position: relative;
+}
+
+.assetContentSection p:first-child {
+    margin-bottom: 0rem;
+}
+
+/* Asset Section End */
+
 /* Weak Section Start */
+.weakness {
+    margin-top: 15rem;
+}
+
 .weakPoint {
     border: 1px solid white;
+    margin-top: 15rem;
 }
 /* Weak Section End */
 
@@ -185,6 +203,29 @@ body {
 }
 #description {
     padding: 0.5rem;
-    width: 55rem;
+    width: 92rem;
+    color: black;
 }
+#impact {
+    color: black;
+}
+
 /* Concept Section End */
+.uploadSection {
+    margin-top: 4rem;
+}
+
+.submitReportButton {
+    margin-left: 48rem;
+    margin-bottom: 3rem;
+}
+.appleCompanySub {
+    width: 90rem;
+    height: 15rem;
+}
+.submitApple {
+    height: 5rem;
+    width: 20rem;
+    font-size: 2.5rem;
+    background-color: green;
+}

@@ -4,37 +4,35 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Report</title>
+        <!-- vendor Links -->
+
         <!-- CSS Link -->
         <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./vendor/bootstrap.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
         <!-- Apple Company Section Start -->
         <div class="container">
-            <div class="appleCompany">
+            <div class="appleCompany appleCompanySub">
                 <!-- Apple Company  Logo Section Start -->
                 <p class="icon icon-bg appleIcon">
                     <i class="fab fa-apple"></i>
                 </p>
                 <!-- Apple Company  Logo Section End -->
                 <div class="appleItem">
-                    <p class="appleLink mt-2 mb-0">
+                    <p class="appleLink mt-2 mb-0" style="font-size: 2rem;">
                         <a href="apple.html ">Apple</a>
                     </p>
-                    <p>Think Different</p>
+                    <p style="font-size: 2rem;">Think Different</p>
                     <!-- Apple Company Link start -->
-                    <p>
+                    <p style="font-size: 2rem;">
                         <a href="https://www.apple.com"
                             >https://www.apple.com</a
                         >
                     </p>
                     <!-- Apple Company Link End -->
                 </div>
-                <!-- Button Section Start -->
-                <button type="button " class="btn btn-danger applebutton">
-                    Submit Report
-                </button>
-                <!-- Button Section End -->
             </div>
         </div>
         <!-- Apple Company Section End -->
@@ -47,8 +45,14 @@
                         class="col-3 leftPart pt-3"
                         style="background-color: #292e32;"
                     >
+                        <!-- Asset Section Start -->
+                        <h2>1.Asset</h2>
+                        <p>
+                            Select the attack surface of this issue.
+                        </p>
+                        <!-- Asset Section End -->
                         <!-- Weak Section Start -->
-                        <h2>2.Weakness</h2>
+                        <h2 class="weakness">2.Weakness</h2>
                         <p>
                             Select the type of the potential issue you have
                             discovered.
@@ -79,6 +83,56 @@
 
                     <!-- Right Section Start -->
                     <div class="col-9 pt-3" style="background-color: #292e32;">
+                        <!-- Asset Section Start -->
+                        <div class="assetSection p-2">
+                            <div class="row">
+                                <div class="dropdown show">
+                                    <a
+                                        class="btn btn-secondary dropdown-toggle"
+                                        href="#"
+                                        role="button"
+                                        id="dropdownMenuLink"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        Dropdown link
+                                    </a>
+
+                                    <div
+                                        class="dropdown-menu"
+                                        aria-labelledby="dropdownMenuLink"
+                                    >
+                                        <a class="dropdown-item" href="#"
+                                            >Action</a
+                                        >
+                                        <a class="dropdown-item" href="#"
+                                            >Another action</a
+                                        >
+                                        <a class="dropdown-item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </div>
+                                </div>
+                                <div class="assetTitlesection">
+                                    <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Search"
+                                        aria-label="Search"
+                                    />
+                                </div>
+                            </div>
+                            <div class="assetContentSection">
+                                <p>*.apple.com</p>
+                                <p style="color: #acacb0;">
+                                    Domain . Critical . Eligible for bountry
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Asset Section End -->
+
                         <!-- Weak Item Section Start -->
                         <div class="weakPoint p-2">
                             <p>
@@ -98,10 +152,11 @@
                                 vulnerability and the impacted asset.
                             </p>
                             <div class="titleSection">
-                                <form action="">
-                                    <label for="text"></label>
-                                    <input type="text" id="title" name="text" />
-                                </form>
+                                <input
+                                    type="text"
+                                    maxlength="150"
+                                    class="form-control"
+                                />
                             </div>
                             <!-- Title Section End -->
                             <!-- Description Section Start -->
@@ -116,9 +171,21 @@
 
                                     <textarea
                                         id="description"
-                                        rows="6"
-                                        cols="123"
+                                        rows="13"
+                                        cols="150"
                                     >
+  ## Summary:
+[add summary of the vulnerability]
+
+## Steps To Reproduce:
+[add details for how we can reproduce the issue]
+
+  1. [add step]
+  1. [add step]
+  1. [add step]
+
+## Supporting Material/References:
+[list any additional material (e.g. screenshots, logs, etc.)]
                                     </textarea>
                                 </form>
                             </div>
@@ -132,11 +199,37 @@
                                 <form action="">
                                     <label for="impact"></label>
 
-                                    <textarea id="impact" rows="6" cols="123">
+                                    <textarea id="impact" rows="14" cols="150">
+ ## Summary:
+ [add summary of the vulnerability]
+                                        
+ ## Steps To Reproduce:
+[add details for how we can reproduce the issue]
+                                        
+ 1. [add step]
+ 1. [add step]
+ 1. [add step]
+                                        
+## Supporting Material/References:
+[list any additional material (e.g. screenshots, logs, etc.)]
+                                    
                                     </textarea>
                                 </form>
                             </div>
                             <!-- Impact Section End -->
+
+                            <!-- File Upload Section Start -->
+                            <div class="uploadSection">
+                                <div class="mt-3">
+                                    <button
+                                        type="submit"
+                                        class="btn submitReportButton submitApple"
+                                    >
+                                        Submit Report
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- File Upload Section End -->
                         </div>
                         <!-- Concept Item End -->
                     </div>
@@ -150,5 +243,11 @@
             src="https://kit.fontawesome.com/f395748b55.js"
             crossorigin="anonymous"
         ></script>
+        <!-- vendor files -->
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+        <script src="./vendor/bootstrap-maxlength.js"></script>
+
+        <script src="./assets/js/main.js"></script>
     </body>
 </html>
