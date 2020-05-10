@@ -8,11 +8,32 @@
         <!-- CSS Link -->
         <link rel="stylesheet" href="./vendor/css/bootstrap.min.css" />
         <link rel="stylesheet" href="./vendor/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="./assets/css/cvss.css">
         <link rel="stylesheet" href="./assets/css/style.css" />
+        
+    <script src="./assets/js/cvss.js"></script>
+
+    <style>
+        body { 
+            font-family: arial;
+            padding: 1em;
+            align-content: center;
+        }
+        #cvssboard {
+            text-align: center;
+            align-content: center;
+        }   
+@media screen and (min-width: 720px) {
+        #cvssboard {
+            width: 640px;    
+            display: inline-block;
+        }
+}
+    </style>
     </head>
     <body>
         <!-- Apple Company Section Start -->
-        <div class="container">
+        <div class="container ">
             <div class="appleCompany appleCompanySub">
                 <!-- Apple Company  Logo Section Start -->
                 <p class="icon icon-bg appleIcon">
@@ -37,99 +58,33 @@
         <!-- Apple Company Section End -->
 
         <div class="container2Section">
-            <div class="container-fluid mt-4 pt-2">
-                <div class="row">
-                    <!-- Left Section Start -->
-                    <div
-                        class="col-3 leftPart pt-3"
-                        style="background-color: #292e32;"
-                    >
-                        <!-- Asset Section Start -->
-                        <h2>1.Asset</h2>
-                        <p>
-                            Select the attack surface of this issue.
-                        </p>
-                        <!-- Asset Section End -->
-                        <!-- Weak Section Start -->
-                        <h2 class="weakness">2.Weakness</h2>
-                        <p>
-                            Select the type of the potential issue you have
-                            discovered.
-                        </p>
-                        <br />
-                        <p>
-                            Can't pick just one? Select the best match or submit
-                            a separate report for each distinct weakness.
-                        </p>
-
-                        <!-- Weak Section End -->
-                        <!-- Concept Section Start -->
-                        <div class="conceptSection">
-                            <h2>4.Proof of Concept</h2>
-                            <p>
-                                The proof of concept is the most important part
-                                of your report submission.
-                            </p>
-                            <br />
-                            <p>
-                                Clear, reproducible steps will help us validate
-                                this issue as quickly as possible.
-                            </p>
-                        </div>
-                        <!-- Concept Section End -->
-                    </div>
-                    <!-- Left Section End -->
+         
+               
 
                     <!-- Right Section Start -->
-                    <div class="col-9 pt-3" style="background-color: #292e32;">
-                        <!-- Asset Section Start -->
-                        <div class="assetSection p-2">
-                            
-                              
-                                <div class="assetTitlesection">
-                                    <input
-                                        class="form-control"
-                                        type="text"
-                                        placeholder="Search"
-                                        aria-label="Search"
-                                    />
-                                </div>
-                           
-                            <div class="assetContentSection">
-                                <p>*.apple.com</p>
-                                <p style="color: #acacb0;">
-                                    Domain . Critical . Eligible for bountry
-                                </p>
-                                <p>*.apple.com</p>
-                                <p style="color: #acacb0;">
-                                    Domain . Critical . Eligible for bountry
-                                </p>
-                            </div>
-                        </div>
+                    <div class=" pt-3" style="background-color: #292e32;">
+                     
+                     
 
-                        <!-- Asset Section End -->
+              
 
-                        <!-- Weak Item Section Start -->
-                        <div class="weakPoint p-2">
-                            <p>
-                                Array Index Underflow<span
-                                    style="color: #acacb0;"
-                                    >(CWE-129)</span
-                                >
-                            </p>
-                            <p>
-                                Array Index Underflow<span
-                                    style="color: #acacb0;"
-                                    >(CWE-129)</span
-                                >
-                            </p>
-                        </div>
+                    
                         <!-- Weak Item Section End -->
+                       <div class="cvsCalculator">
+                        <hgroup>
+                            <h3 class="mb-4 ml-4">CVSS v3.1 Base Score Calculator</h3></hgroup>
+                            <div id="cvssboard">
+                            </div>
+                            <br>
+                            <footer id="footer">
+
+                            </div>
+
                         <!-- Concept Item Start -->
                         <div class="proofConceptPart">
                             <!-- Title Section Start -->
                             <h4>Title</h4>
-                            <p>
+                            <p class="text-color">
                                 A clear and concise title includes the type of
                                 vulnerability and the impacted asset.
                             </p>
@@ -153,7 +108,7 @@
 
                                     <textarea
                                         id="description"
-                                        rows="17"
+                                        rows="19"
                                         cols="150"
                                     >
 >Note! Thanks for submitting a report! Please replace *all* the [square] sections below with the patient details. Remember, the more detail you provide, the easier it is for us to triage and respond quickly, so be sure to take your time filling out the report!
@@ -165,11 +120,12 @@
 [add details for how we can reproduce the issue]
 
   1. [add step]
-  1. [add step]
-  1. [add step]
+  2. [add step]
+  3. [add step]
 
 ## Supporting Material/References:
 [list any additional material (e.g. screenshots, logs, etc.)]
+
                                     </textarea>
                                 </form>
                             </div>
@@ -182,9 +138,9 @@
                             </p>
                             <div class="reproduceSection">
                                 <form action="">
-                                    <label for="impact"></label>
+                                    <label for="reproduce"></label>
 
-                                    <textarea id="impact" rows="17" cols="150">
+                                    <textarea id="reproduce" rows="17" cols="150">
 >Note! Thanks for submitting a report! Please replace *all* the [square] sections below with the patient details. Remember, the more detail you provide, the easier it is for us to triage and respond quickly, so be sure to take your time filling out the report!
 
  ## Summary:
@@ -194,13 +150,22 @@
 [add details for how we can reproduce the issue]
                                         
  1. [add step]
- 1. [add step]
- 1. [add step]
+ 2. [add step]
+ 3. [add step]
                                         
 ## Supporting Material/References:
 [list any additional material (e.g. screenshots, logs, etc.)]
                                     
                                     </textarea>
+                                    <div class="textFooterLeft">
+                                        <a href="#" class="textFooterWritePart">Write</a>
+                                        <a href="#" class="textFooterPreviewPart">Preview</a>
+                                       
+
+                                    </div>
+                                    <div class="textFooterRight">
+
+                                    </div>
                                 </form>
                             </div>
                             <!-- Step of Reproduce Section End -->
@@ -212,9 +177,9 @@
                             </p>
                             <div class="ExploitationSection">
                                 <form action="">
-                                    <label for="impact"></label>
+                                    <label for="exploitation"></label>
 
-                                    <textarea id="impact" rows="17" cols="150">
+                                    <textarea id="exploitation" rows="17" cols="150">
 >Note! Thanks for submitting a report! Please replace *all* the [square] sections below with the patient details. Remember, the more detail you provide, the easier it is for us to triage and respond quickly, so be sure to take your time filling out the report!
                   
 ## Summary:
@@ -224,8 +189,8 @@
 [add details for how we can reproduce the issue]
                                                           
 1. [add step]
-1. [add step]
-1. [add step]
+2. [add step]
+3. [add step]
                                                           
 ## Supporting Material/References:
 [list any additional material (e.g. screenshots, logs, etc.)]
@@ -263,12 +228,24 @@
                             <!-- File Upload Section End -->
                         </div>
                         <!-- Concept Item End -->
-                    </div>
-                    <!-- Right Section End -->
-                </div>
-            </div>
-        </div>
+            
+
+
+        <script>
+            var c = new CVSS("cvssboard", {
+                onchange: function() {
+                    window.location.hash = c.get().vector;
+                    c.vector.setAttribute('href', '#' + c.get().vector)
+                }
+            });
+            if (window.location.hash.substring(1).length > 0) {
+                c.set(decodeURIComponent(window.location.hash.substring(1)));
+            }
+        </script>
+
+
         <script src="./vendor/js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="./vendor/js/bootstrap.min.js"></script>
         <script
             src="https://kit.fontawesome.com/f395748b55.js"
@@ -280,5 +257,6 @@
         <script src="./vendor/js/bootstrap-maxlength.js"></script>
 
         <script src="./assets/js/main.js"></script>
+    
     </body>
 </html>

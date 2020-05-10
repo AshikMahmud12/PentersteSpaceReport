@@ -53,12 +53,43 @@ body {
     display: inline-block;
     padding: 0.5rem;
     width: 13rem;
-    margin-left: 65rem;
+    margin-left: 60rem;
     margin-top: 2rem;
     font-size: 1.5rem;
     color: white;
+    
 }
 /* Company Report Start */
+
+.circleGreen{
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    background:green;
+  }
+
+  .circleRed{
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    background:red;
+  }
+
+  .circleYellow{
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    background:yellow;
+  }
+
+
+
 .companyReport {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -67,38 +98,81 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 3rem;
-    background-color: #292e32;
-    padding: 0.2rem;
-    font-size: 1.5rem;
-}
-.firstItem {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 3rem;
-    background-color: #292e32;
+    
     padding: 0.2rem;
     font-size: 1.3rem;
-    margin-top: 0.8rem;
 }
 
-.firstItem p:first-child {
-    margin-left: -0.7rem;
-}
 
-.firstItem p:nth-child(2) {
-    margin-left: -1.3rem;
-}
-.firstItem p:nth-child(3) {
-    margin-left: -3rem;
-}
-.firstItem p:nth-child(5) {
-    margin-left: 4rem;
-}
-.firstItem p:last-child {
-    margin-right: 3rem;
-}
+
+
+
+
+
+
+
+
+
+
 /* Company Report End */
 /* New Asset Creation Section Start */
+
+
+
+.descriptionSection {
+    margin-left: 5rem;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+#companyName{
+    width: 30rem;
+    margin-left: 1rem;
+    padding: .3rem;
+}
+#companyLogo{
+   
+    margin-left: 1rem;
+    padding: .3rem;   
+}
+
+
+#companyUrl{
+    width: 30rem;
+    margin-left: 8rem;
+    padding: .3rem;
+}
+
+#startDate{
+    width: 30rem;
+    margin-left: 4rem;
+    padding: .3rem;
+}
+
+
+#endDate{
+    width: 30rem;
+    margin-left: 4.5rem;
+    padding: .3rem;
+}
+
+
+#inScopeUrl{
+    width: 30rem;
+    margin-left: 1.5rem;
+    padding: .3rem;
+}
+
+#outScopeUrl{
+    width: 30rem;
+    margin-left: 2.4rem;
+    padding: .3rem;
+}
+
+
+
+
+
 .newAssetCreate {
     background-color: #32cd32;
     text-align: center;
@@ -106,18 +180,16 @@ body {
     width: 17rem;
     margin-left: 35rem;
 }
-.descriptionSection {
-    margin-left: 10rem;
-    margin-top: 5rem;
-}
+
 .descriptionSection h4 {
     margin-bottom: 1rem;
 }
 
 .submitButton {
     height: 3.5rem;
-    margin-left: 35rem;
+    margin-left: 32rem;
     font-size: 1.5rem;
+    margin-bottom: 6rem;
 }
 
 
@@ -128,43 +200,15 @@ body {
 
 .companyReportSection{
     display: flex;
-    margin-top: 3rem;
-    margin-left: 4rem;
-}
-.googleReport h1{
-    margin-left: 12rem;
-    margin-right: 8rem;
-}
-.company{
-    margin-left: 7rem;
-}
-.companyNo{
-    margin-left: 7rem;  
-}
-
-.firstProblem {
-    display: flex;
     justify-content: space-around;
     margin-top: 3rem;
-    background-color: #292e32;
-    padding: 0.2rem;
-    font-size: 1.3rem;
-    margin-top: 0.8rem;
+   
 }
-
-.firstProblem p:first-child {
-   margin-left: 1rem;
-}
-
-
-.firstProblem p:nth-child(3) {
-    margin-left: -2rem;
-}
-.firstProblem p:nth-child(5) {
-    margin-left: 4rem;
-}
-.firstProblem p:last-child {
-    margin-right: 3rem;
+.companyNo a{
+    text-decoration: none;
+    color:white;
+    font-size: 2rem;
+    
 }
 
 
@@ -188,13 +232,34 @@ body {
     margin-left: 2rem;
    
 }
-.status .yes{
-    background-color:#32cd32 ;
-    margin-left: .5rem;
+#weakness{
+    width: 30rem;
+    margin-left: 8rem;
     padding: .3rem;
 }
-.status .no{
-    background-color:red ;
+
+#CVS{
+    width: 30rem;
+    margin-left: 4rem;
     padding: .3rem;
+}
+
+
+#title{
+    width: 30rem;
+    margin-left: 4.5rem;
+    padding: .3rem;
+}
+
+
+#description{
+    width: 30rem;
+    margin-left: 1.5rem;
+    padding: .3rem;
+}
+
+#impact{
+    width: 30rem;
+    margin-left: 2.4rem;
     padding: .3rem;
 }

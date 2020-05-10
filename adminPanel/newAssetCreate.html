@@ -9,42 +9,104 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
     <body>
-             <!-- Nav Section Start -->
-             <nav>
-                <div id="navLinks">
-                    <ul class="navLinks">
-                      
-                        <li><a href="#">Directory</a></li>
-                        <li><a href="#">New Asset Create</a></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
-                </div>
-                <!-- Main Menu Section End -->
-            </nav>
-            <!-- Nav Section End -->
-    
-        <!-- Description Section Start -->
+        <!-- Nav Section Start -->
+        <nav>
+            <div id="navLinks">
+                <ul class="navLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">New Asset Create</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+            <!-- Main Menu Section End -->
+        </nav>
+        <!-- Nav Section End -->
+
         <div class="descriptionSection">
-            <h4>Company Name:</h4>
-            <h4>Company Logo :</h4>
-            <h4>Url:</h4>
-            <h4>Start Date:</h4>
-            <h4>End Date:</h4>
-            <h4>IN scope URL’s:</h4>
-            <h4>Out Of Scope:</h4>
-           
+            <form action="">
+                <label for="companyName">Company Name:</label>
+                <input
+                    type="text"
+                    id="companyName"
+                    name="companyName"
+                /><br /><br />
+
+                <label for="companyLogo">Company Logo :</label>
+                <input
+                    type="file"
+                    id="companyLogo"
+                    name="companyLogo"
+                /><br /><br />
+
+                <label for="companyUrl">Url:</label>
+                <input
+                    type="url"
+                    id="companyUrl"
+                    name="companyUrl"
+                /><br /><br />
+
+                <label for="startDate">Start Date:</label>
+                <input
+                    type="date"
+                    id="startDate"
+                    name="startDate"
+                /><br /><br />
+
+                <label for="endDate">End Date: </label>
+                <input type="date" id="endDate" name="endDate" /><br /><br />
+
+                <label for="inScopeUrl">IN scope URL’s:</label>
+                <input
+                    type="url"
+                    id="inScopeUrl"
+                    name="inScopeUrl"
+                /><br /><br />
+
+                <label for="outScopeUrl">Out Of Scope:</label>
+                <input
+                    type="url"
+                    id="outScopeUrl"
+                    name="outScopeUrl"
+                /><br /><br />
+
+                <!-- <input
+                    type="submit"
+                    value="Submit "
+                    class="submitButton btnType"
+                /> -->
+            </form>
         </div>
-        <!-- Description Section End -->
 
         <!-- Create New Button Start -->
-        <div class="submitButton">
-            <a href="companyReport.html">
-                <button type="button " class="btnType submitButton">
-                    Launch program
 
-                </button></a
-            >
-        </div>
+
+        <button type="button" class="btn  btnType submitButton" data-toggle="modal" data-target="#launchProgramModal">
+            Launch Program
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="launchProgramModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-dark" id="exampleModalLabel  ">Launch Program</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body text-dark">
+                  Are you sure want to launch the program
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                  <button type="button" class="btn btn-danger">Yes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
         <!-- Create New Button End -->
 
         <!-- Js Link -->

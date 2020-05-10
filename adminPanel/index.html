@@ -13,6 +13,7 @@
         <nav>
             <div id="navLinks">
                 <ul class="navLinks">
+                    <li><a href="#">Home </a></li>
                     <li><a href="#">Create Sow</a></li>
                     <li><a href="newAssetCreate.html">Create New Asset</a></li>
                     <li><a href="#">Logout</a></li>
@@ -21,96 +22,80 @@
             <!-- Main Menu Section End -->
         </nav>
         <!-- Nav Section End -->
-        <!-- Admin Panel Start -->
-        <!-- <div class="adminPanel">
-            <h4>Admin Panel</h4>
-        </div> -->
-        <!-- Admin Panel End -->
+
         <!-- penetesterSPace  Title Start -->
         <div class="penetesterSPace">
             <h2>PenetesterSPace Reporting System</h2>
         </div>
         <!-- penetesterSPace Tittle End -->
-        <!-- Create New Button Start -->
-        <!-- <div class="createNewAsset">
-            <a href="newAssetCreate.html">
-                <button type="button " class="btn googlebutton">
-                    Create New Asset
-                </button></a
-            >
-        </div> -->
-        <!-- Create New Button End -->
+
         <!-- Company Report Section Start -->
         <div class="companyReport">
             <!--Title Section Start  -->
             <div class="titleSection">
-                <p>Sl No</p>
-                <p>Sattus</p>
-                <p>Company</p>
-                <p>Submitted Bug</p>
-                <p>Triage Status</p>
-                <p>Report Complete<span>10</span></p>
-                <p>Description</p>
+                <!-- Table Section Start -->
+                <table class="table table-dark">
+                    <!-- Table Header Start -->
+                    <thead>
+                        <tr>
+                            <th scope="col">Sl No</th>
+                            <th scope="col">Sattus</th>
+                            <th scope="col">Company</th>
+                            <th scope="col">Submitted Bug</th>
+                            <th scope="col">Triage Status</th>
+                            <th scope="col">Report Complete</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <!-- Table Header End -->
+                    <tbody>
+                        <!-- First Row Start -->
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>
+                                <span class="circleGreen mr-2"></span>Running
+                            </td>
+                            <td>Google</td>
+                            <td>100</td>
+                            <td>. Valid<span>80</span></td>
+                            <td>Description</td>
+                            <td>
+                                <a href="companyReport.html"><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <!-- First Row End -->
+                        <!-- Second Row Start -->
+                        <tr>
+                            <th scope="row">2</th>
+                            <td><span class="circleRed mr-2"></span>Close</td>
+                            <td>Apple</td>
+                            <td>100</td>
+                            <td>. Valid<span>40</span></td>
+                            <td>Description</td>
+                            <td>
+                                <a href=""><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <!-- Second Row End -->
+                        <!-- Third Row Start -->
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>
+                                <span class="circleYellow mr-2"></span>Pending
+                            </td>
+                            <td>Microsoft</td>
+                            <td>100</td>
+                            <td>. Valid<span>35</span></td>
+                            <td>Description</td>
+                            <td>
+                                <a href=""><i class="fas fa-eye"></i></a>
+                            </td>
+                        </tr>
+                        <!-- Third Row End -->
+                    </tbody>
+                </table>
+                <!-- Table Section Start -->
             </div>
-
-            <!--Title Section End  -->
-            <!-- First Item Start -->
-            <div class="firstItem">
-                <p>3</p>
-                <p>
-                    <span
-                        ><img
-                            src="./assets/img/circle-green.png"
-                            alt="circle-red"
-                            height="25rem"
-                            width="25rem" /></span
-                    >Running
-                </p>
-                <p>Google</p>
-                <p>100</p>
-                <p>. Valid<span>80</span></p>
-                <p>Report Complete<span>10</span></p>
-                <p><i class="fas fa-eye"></i></p>
-            </div>
-            <!-- First Item End -->
-            <!-- Second Item Start -->
-            <div class="firstItem">
-                <p>2</p>
-                <p>
-                    <span
-                        ><img
-                            src="./assets/img/circle-green.png"
-                            alt="circle-red"
-                            height="25rem"
-                            width="25rem" /></span
-                    >Running
-                </p>
-                <p>Apple</p>
-                <p>80</p>
-                <p>. Valid<span>40</span></p>
-                <p>Report Complete<span>35</span></p>
-                <p><i class="fas fa-eye"></i></p>
-            </div>
-            <!-- Second Item End -->
-            <!-- Third Item Start -->
-            <div class="firstItem">
-                <p>1</p>
-                <p>
-                    <span
-                        ><img
-                            src="./assets/img/circle-red.jpg"
-                            alt="circle-red"
-                            height="25rem"
-                            width="25rem" /></span
-                    >Close
-                </p>
-                <p>Microsoft</p>
-                <p>50</p>
-                <p>. Valid<span>30</span></p>
-                <p>Report Complete<span>30</span></p>
-                <p><i class="fas fa-eye"></i></p>
-            </div>
-            <!-- Third Item Start -->
         </div>
         <!-- Company Report Section End -->
 
