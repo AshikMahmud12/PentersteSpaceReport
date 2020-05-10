@@ -13,28 +13,60 @@
         <nav>
             <div id="navLinks">
                 <ul class="navLinks">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
+
                     <li>
-                        <a href="#" id="searchOption">Report No</a>
+                        <a
+                            href="#"
+                            data-toggle="modal"
+                            data-target="#triagedModal"
+                            >Triaged
+                        </a>
+
+                        <div class="modal" id="triagedModal">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5
+                                            class="modal-title text-secondary"
+                                            id="exampleModalLabel"
+                                        >
+                                            Modal title
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="close"
+                                            data-dismiss="modal"
+                                            aria-label="Close"
+                                        >
+                                            <span aria-hidden="true"
+                                                >&times;</span
+                                            >
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-danger">
+                                        Are you sure
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary"
+                                            data-dismiss="modal"
+                                        >
+                                            No
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-danger"
+                                        >
+                                            Yes
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
 
-                    <li id="searchOption" >
-                        <form class="form-inline" >
-                            <input
-                                class="form-control mr-sm-2"
-                                type="search"
-                                placeholder="Search"
-                                aria-label="Search"
-                            />
-                            <button
-                                class="btn btn-outline-success my-2 my-sm-0"
-                                type="submit"
-                            >
-                                Search
-                            </button>
-                        </form>
-                    </li>
-                    <li><a href="#">Triaged </a></li>
                     <li>
                         <a
                             href="#"
@@ -94,8 +126,8 @@
             </div>
             <!-- Main Menu Section End -->
         </nav>
-      
-<!--         
+
+        <!--         
         <div class="descriptionSection">
             <form action="">
                 <label for="weakness">Weakness:</label>
@@ -133,27 +165,46 @@
         
         
          -->
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+        <div id="searchOption">
+            <form class="form-inline">
+                <input
+                    class="form-control mr-sm-2"
+                    type="search"
+                    placeholder="Report No"
+                    aria-label="Search"
+                />
+                <button
+                    class="btn btn-outline-success my-2 my-sm-0"
+                    type="submit"
+                >
+                    Search
+                </button>
+            </form>
+        </div>
+
         <!-- Report Description Start -->
         <div class="reportDescription">
-            
-            <h3>Weakness:</h3>
-            <h3>Severity/CVSS Result: High/Medium/Low</h3>
-            <h3>Title:</h3>
-            <h3>Description:</h3>
-            <h3>Impact:</h3>
+            <div class="weaknessReport report">
+                <h4>Weakness:</h4>
+                <p class="text-justify"></p>
+            </div>
+            <div class="cvsReport report">
+                <h4>Severity/CVSS Result: High/Medium/Low</h4>
+                <p class="text-justify"></p>
+            </div>
+            <div class="titleReport report">
+                <h4>Title:</h4>
+                <p class="text-justify"></p>
+            </div>
+            <div class="descriptionReport report">
+                <h4>Description:</h4>
+                <p class="text-justify"></p>
+            </div>
+            <div class="impactReport report">
+                <h4>Impact:</h4>
+                <p class="text-justify"></p>
+            </div>
         </div>
         <!-- Report Description End -->
 
