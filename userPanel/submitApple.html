@@ -8,32 +8,37 @@
         <!-- CSS Link -->
         <link rel="stylesheet" href="./vendor/css/bootstrap.min.css" />
         <link rel="stylesheet" href="./vendor/css/bootstrap.css" />
-        <link rel="stylesheet" type="text/css" media="all" href="./assets/css/cvss.css">
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="all"
+            href="./assets/css/cvss.css"
+        />
         <link rel="stylesheet" href="./assets/css/style.css" />
-        
-    <script src="./assets/js/cvss.js"></script>
 
-    <style>
-        body { 
-            font-family: arial;
-            padding: 1em;
-            align-content: center;
-        }
-        #cvssboard {
-            text-align: center;
-            align-content: center;
-        }   
-@media screen and (min-width: 720px) {
-        #cvssboard {
-            width: 640px;    
-            display: inline-block;
-        }
-}
-    </style>
+        <script src="./assets/js/cvss.js"></script>
+
+        <style>
+            body {
+                font-family: arial;
+                padding: 1em;
+                align-content: center;
+            }
+            #cvssboard {
+                text-align: center;
+                align-content: center;
+            }
+            @media screen and (min-width: 720px) {
+                #cvssboard {
+                    width: 640px;
+                    display: inline-block;
+                }
+            }
+        </style>
     </head>
     <body>
         <!-- Apple Company Section Start -->
-        <div class="container ">
+        <div class="container">
             <div class="appleCompany appleCompanySub">
                 <!-- Apple Company  Logo Section Start -->
                 <p class="icon icon-bg appleIcon">
@@ -58,59 +63,52 @@
         <!-- Apple Company Section End -->
 
         <div class="container2Section">
-         
-               
+            <!-- Right Section Start -->
+            <div class="pt-3" style="background-color: #292e32;">
+                <!-- Weak Item Section End -->
+                <div class="cvsCalculator">
+                    <hgroup>
+                        <h3 class="mb-4 ml-4">
+                            CVSS v3.1 Base Score Calculator
+                        </h3>
+                    </hgroup>
+                    <div id="cvssboard"></div>
+                    <br />
+                    <footer id="footer"></footer>
+                </div>
 
-                    <!-- Right Section Start -->
-                    <div class=" pt-3" style="background-color: #292e32;">
-                     
-                     
+                <!-- Concept Item Start -->
+                <div class="proofConceptPart">
+                    <!-- Title Section Start -->
+                    <h4>Title</h4>
+                    <p class="text-color">
+                        A clear and concise title includes the type of
+                        vulnerability and the impacted asset.
+                    </p>
+                    <div class="titleSection">
+                        <input
+                            type="text"
+                            maxlength="150"
+                            class="form-control"
+                        />
+                    </div>
+                    <!-- Title Section End -->
+                    <!-- Description Section Start -->
+                    <h4 class="mt-4">Description</h4>
+                    <p>
+                        What is the vulnerability? In clear steps, how do you
+                        reproduce it?
+                    </p>
+                    <div class="descriptionSection text-muted">
+                        <form action="">
+                            <label for="description"></label>
 
-              
-
-                    
-                        <!-- Weak Item Section End -->
-                       <div class="cvsCalculator">
-                        <hgroup>
-                            <h3 class="mb-4 ml-4">CVSS v3.1 Base Score Calculator</h3></hgroup>
-                            <div id="cvssboard">
-                            </div>
-                            <br>
-                            <footer id="footer">
-
-                            </div>
-
-                        <!-- Concept Item Start -->
-                        <div class="proofConceptPart">
-                            <!-- Title Section Start -->
-                            <h4>Title</h4>
-                            <p class="text-color">
-                                A clear and concise title includes the type of
-                                vulnerability and the impacted asset.
-                            </p>
-                            <div class="titleSection">
-                                <input
-                                    type="text"
-                                    maxlength="150"
-                                    class="form-control"
-                                />
-                            </div>
-                            <!-- Title Section End -->
-                            <!-- Description Section Start -->
-                            <h4 class="mt-4">Description</h4>
-                            <p>
-                                What is the vulnerability? In clear steps, how
-                                do you reproduce it?
-                            </p>
-                            <div class="descriptionSection">
-                                <form action="">
-                                    <label for="description"></label>
-
-                                    <textarea
-                                        id="description"
-                                        rows="19"
-                                        cols="150"
-                                    >
+                            <textarea
+                                id="textArea"
+                                class="description"
+                                rows="17"
+                                cols="150"
+                            >
 >Note! Thanks for submitting a report! Please replace *all* the [square] sections below with the patient details. Remember, the more detail you provide, the easier it is for us to triage and respond quickly, so be sure to take your time filling out the report!
 
   ## Summary:
@@ -126,21 +124,52 @@
 ## Supporting Material/References:
 [list any additional material (e.g. screenshots, logs, etc.)]
 
-                                    </textarea>
-                                </form>
-                            </div>
-                            <!-- Description Section End -->
-                            <!-- Step of Reproduce Section Start -->
-                            <h4 class="mt-4">Step of Reproduce</h4>
-                            <p>
-                                What is vulnerability? In clear steps, how do
-                                you reproduce it?
-                            </p>
-                            <div class="reproduceSection">
-                                <form action="">
-                                    <label for="reproduce"></label>
+                                    </textarea
+                            >
+                            <div class="textFooter descriptionFooter">
+                                <div class="textFooterLeft">
+                                    <button
+                                        type="button"
+                                        onclick="writeFunctionDes()"
+                                    >
+                                        Write
+                                    </button>
 
-                                    <textarea id="reproduce" rows="17" cols="150">
+                                    <button
+                                        type="button"
+                                        onclick="previewFunctionDes()"
+                                    >
+                                        Preview
+                                    </button>
+                                </div>
+                                <div class="textFooterRight">
+                                    <p class="mr-2">Parsed with</p>
+                                    <a
+                                        href="https://docs.hackerone.com/programs/using-markdown.html"
+                                        class="markedLink"
+                                        >Markdown</a
+                                    >
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Description Section End -->
+                    <!-- Step of Reproduce Section Start -->
+                    <h4 class="mt-4">Step of Reproduce</h4>
+                    <p>
+                        What is vulnerability? In clear steps, how do you
+                        reproduce it?
+                    </p>
+                    <div class="reproduceSection text-muted">
+                        <form action="">
+                            <label for="reproduce"></label>
+
+                            <textarea
+                                id="reproduce"
+                                class="reproduce"
+                                rows="17"
+                                cols="150"
+                            >
 >Note! Thanks for submitting a report! Please replace *all* the [square] sections below with the patient details. Remember, the more detail you provide, the easier it is for us to triage and respond quickly, so be sure to take your time filling out the report!
 
  ## Summary:
@@ -156,32 +185,52 @@
 ## Supporting Material/References:
 [list any additional material (e.g. screenshots, logs, etc.)]
                                     
-                                    </textarea>
-                                    <div class="textFooterLeft">
-                                        <a href="#" class="textFooterWritePart">Write</a>
-                                        <a href="#" class="textFooterPreviewPart">Preview</a>
-                                       
+                                    </textarea
+                            >
+                            <div class="textFooter">
+                                <div class="textFooterLeft">
+                                    <button
+                                        type="button"
+                                        onclick="writeFunctionRep()"
+                                    >
+                                        Write
+                                    </button>
 
-                                    </div>
-                                    <div class="textFooterRight">
-                                        <p>Parsed with</p>
-                                        <a class="markedLink">Markdown</a>
-
-                                    </div>
-                                </form>
+                                    <button
+                                        type="button"
+                                        onclick="previewFunctionRep()"
+                                    >
+                                        Preview
+                                    </button>
+                                </div>
+                                <div class="textFooterRight">
+                                    <p class="mr-2">Parsed with</p>
+                                    <a
+                                        href="https://docs.hackerone.com/programs/using-markdown.html"
+                                        class="markedLink"
+                                        >Markdown</a
+                                    >
+                                </div>
                             </div>
-                            <!-- Step of Reproduce Section End -->
-                            <!-- Exploitation Section Start -->
-                            <h4 class="mt-4">Exploitation</h4>
-                            <p>
-                                What is vulnerability? In clear steps, how do
-                                you reproduce it?
-                            </p>
-                            <div class="ExploitationSection">
-                                <form action="">
-                                    <label for="exploitation"></label>
+                        </form>
+                    </div>
+                    <!-- Step of Reproduce Section End -->
+                    <!-- Exploitation Section Start -->
+                    <h4 class="mt-4">Exploitation</h4>
+                    <p>
+                        What is vulnerability? In clear steps, how do you
+                        reproduce it?
+                    </p>
+                    <div class="ExploitationSection text-muted">
+                        <form action="">
+                            <label for="exploitation"></label>
 
-                                    <textarea id="exploitation" rows="17" cols="150">
+                            <textarea
+                                id="exploitation"
+                                class="exploitation"
+                                rows="17"
+                                cols="150"
+                            >
 >Note! Thanks for submitting a report! Please replace *all* the [square] sections below with the patient details. Remember, the more detail you provide, the easier it is for us to triage and respond quickly, so be sure to take your time filling out the report!
                   
 ## Summary:
@@ -198,56 +247,115 @@
 [list any additional material (e.g. screenshots, logs, etc.)]
                                                       
                                                       </textarea
-                                    >
-                                </form>
-                            </div>
-                            <!-- Exploitation Section End -->
-                            <!-- Fixation Section Start -->
-                            <h4 class="mt-4">Exploitation</h4>
-                            <p>
-                                What security impact could an attacker achieve?
-                            </p>
-                            <div class="exploitationSection">
-                                <form action="">
-                                    <label for="impact"></label>
-
-                                    <textarea id="impact" rows="10" cols="150">
-                                    </textarea>
-                                </form>
-                            </div>
-                            <!-- Fixation Section End -->
-                            <!-- File Upload Section Start -->
-                            <div class="uploadSection">
-                                <div class="mt-3">
+                            >
+                            <div class="textFooter">
+                                <div class="textFooterLeft">
                                     <button
-                                        type="submit"
-                                        class="btn submitReportButton submitApple"
+                                        type="button"
+                                        onclick="writeFunctionExp()"
                                     >
-                                        Submit Report
+                                        Write
+                                    </button>
+
+                                    <button
+                                        type="button"
+                                        onclick="previewFunctionExp()"
+                                    >
+                                        Preview
                                     </button>
                                 </div>
+                                <div class="textFooterRight">
+                                    <p class="mr-2">Parsed with</p>
+                                    <a
+                                        href="https://docs.hackerone.com/programs/using-markdown.html"
+                                        class="markedLink"
+                                        >Markdown</a
+                                    >
+                                </div>
                             </div>
-                            <!-- File Upload Section End -->
-                        </div>
-                        <!-- Concept Item End -->
-            
+                        </form>
+                    </div>
+                    <!-- Exploitation Section End -->
+                    <!-- Fixation Section Start -->
+                    <h4 class="mt-4">Fixation</h4>
+                    <p>
+                        What security impact could an attacker achieve?
+                    </p>
+                    <div class="fixationSection text-muted">
+                        <form action="">
+                            <label for="fixation"></label>
 
+                            <textarea
+                                id="fixation"
+                               
+                                class="fixation"
+                                rows="10"
+                                cols="150"
+                            >
+                            </textarea>
+                            <div class="textFooter">
+                                <div class="textFooterLeft">
+                                    <button
+                                        type="button"
+                                        onclick="writeFunctionFix()"
+                                    >
+                                        Write
+                                    </button>
+
+                                    <button
+                                        type="button"
+                                        onclick="previewFunctionFix()"
+                                    >
+                                        Preview
+                                    </button>
+                                </div>
+                                <div class="textFooterRight">
+                                    <p class="mr-2">Parsed with</p>
+                                    <a
+                                        href="https://docs.hackerone.com/programs/using-markdown.html"
+                                        class="markedLink"
+                                        >Markdown</a
+                                    >
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Fixation Section End -->
+                    <!-- File Upload Section Start -->
+                    <div class="uploadSection">
+                        <div class="mt-3">
+                            <button
+                                type="submit"
+                                class="btn submitReportButton submitApple"
+                            >
+                                Submit Report
+                            </button>
+                        </div>
+                    </div>
+                    <!-- File Upload Section End -->
+                </div>
+                <!-- Concept Item End -->
+            </div>
+        </div>
 
         <script>
             var c = new CVSS("cvssboard", {
-                onchange: function() {
+                onchange: function () {
                     window.location.hash = c.get().vector;
-                    c.vector.setAttribute('href', '#' + c.get().vector)
-                }
+                    c.vector.setAttribute("href", "#" + c.get().vector);
+                },
             });
             if (window.location.hash.substring(1).length > 0) {
                 c.set(decodeURIComponent(window.location.hash.substring(1)));
             }
         </script>
 
-
         <script src="./vendor/js/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
         <script src="./vendor/js/bootstrap.min.js"></script>
         <script
             src="https://kit.fontawesome.com/f395748b55.js"
@@ -259,6 +367,5 @@
         <script src="./vendor/js/bootstrap-maxlength.js"></script>
 
         <script src="./assets/js/main.js"></script>
-    
     </body>
 </html>

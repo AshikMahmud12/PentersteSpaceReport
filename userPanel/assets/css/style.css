@@ -239,22 +239,23 @@ body {
     padding: 0.5rem;
     width: 55rem;
 }
-#description {
+.description {
     padding: 0.5rem;
-    margin-bottom: 5rem;
+    
     color: black;
 }
-#impact {
+.fixation{
     color: black;
 }
-#reproduce{
+.reproduce{
     color: black;
-    margin-bottom: 5rem;
+   
 }
 
-#exploitation{
+.exploitation{
     color: black;
-    margin-bottom: 5rem;  
+   
+
 }
 
 
@@ -286,4 +287,21 @@ body {
     margin-bottom: 6rem;
     justify-content: center;
     margin-left: 35rem;
+}
+.textFooter{
+    display: flex;
+    background-color: #f7f8f9;;
+    margin-right: 8.5rem;
+    font-size: 1.8rem;
+    padding: .9rem;
+    margin-left: .4rem;
+    margin-top: -.8rem;
+    margin-bottom: 5rem;
+}
+.textFooterRight{
+    display: flex;
+    margin-left: 70rem;
+}
+.descriptionFooter{
+    margin-right: 7.8rem;
 }
