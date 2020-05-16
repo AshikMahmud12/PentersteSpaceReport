@@ -99,10 +99,27 @@ body {
 /* Reporting Page Section End */
 /* Apple Section Start */
 .container {
-    margin-left: 10rem;
+    margin-left: 3rem;
     margin-top: 4rem;
     margin-bottom: 6rem;
+    display: flex;
 }
+
+.backButton{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 6rem !important;
+    margin-top: 3rem;
+ 
+}
+
+.backButton i{ 
+    font-size: 2rem; 
+}
+.backButton2 i{
+font-size: 3rem;
+}
+
 .appleCompany {
     display: flex;
     width: 60rem;
@@ -148,17 +165,7 @@ body {
     margin-top: 3rem;
     margin-left: 1rem;
 }
-.microsoftLink{
-    margin-left: 10rem;
-}
 
-.domainLink{
-    margin-left: 19rem;
-}
-
-.playStoreLink{
-    margin-left: 13rem;
-}
 
 .outScope{
     background-color: #292e32;

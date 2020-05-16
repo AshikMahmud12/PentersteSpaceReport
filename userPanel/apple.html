@@ -11,6 +11,9 @@
     <body>
         <!-- Apple Company Section Start -->
         <div class="container">
+            <div class="backButton">
+            <button type="button" class="btn btn-success"><i class="fas fa-long-arrow-alt-left"></i></button>
+        </div>
             <div class="appleCompany">
                 <!-- Apple Company  Logo Section Start -->
                 <p class="icon icon-bg appleIcon">
@@ -59,78 +62,82 @@
 
                 <div class="inScopeItem">
                     <!-- In Scope First Item Start -->
-                    <div class="row">
-                        <div>
-                            <h5>Windows: Microsoft Store</h5>
-                        </div>
-                        <div class="microsoftLink">
-                            <h5>9wzdncrfj3mb</h5>
-                            <div class="row">
-                                <p class="ml-3 mr-2">Download</p>
-                                <p>
-                                    <a href="#"
-                                        >here <i class="fas fa-download"></i
-                                    ></a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                     <!-- In Scope First Item End -->
-                      <!-- In Scope Second Item Start -->
-                     <div class="row mt-4">
-                        <div>
-                            <h5>Domain</h5>
-                        </div>
-                        <div class="domainLink">
-                            <h5>*.evernote.com</h5>
-                        
-                        </div>
-                    </div>
-                    <hr>
-                     <!-- In Scope Second Item End -->
-                      <!-- In Scope Third Item Start -->
-                    <div class="row">
-                        <div>
-                            <h5>Android: Play Store</h5>
-                        </div>
-                        <div class="playStoreLink">
-                            <h5>com.evernote</h5>
-                            <div class="row ">
-                                <p class="ml-3 mr-2 ">Download</p>
-                                <p>
-                                    <a href="#"
-                                        >here <i class="fas fa-download"></i
-                                    ></a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                     <!-- In Scope Third Item End -->
+
+                    <table class="table table-dark">
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>IOS</td>
+                                <td>
+                                    9wzdncrfj3mb<br />Download
+                                    <span
+                                        ><a href="#"
+                                            >here
+                                            <i class="fas fa-download"></i></a
+                                    ></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Domain</td>
+                                <td>*.evernote.com</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Android: Play Store</td>
+                                <td>
+                                    com.evernote<br />Download<span
+                                        ><a href="#"
+                                            >here
+                                            <i class="fas fa-download"></i></a
+                                    ></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <!-- In Scope Section End -->
             <div class="outOfScope">
                 <div class="outScope mb-4">
                     <h1>Out Of Scope</h1>
-
                 </div>
-             <div>
-                 <h4 class="font-weight-bold mb-2">Out of Scope Vulnerabilities</h4>
-                 <p>All other DigitalOcean domains or properties not listed are out of scope, including subdomains. All domains or properties hosted on DigitalOcean and controlled by third parties are out of scope </p>
-             </div>
-              <div>
-                  <li>
-                    Support tickets (due to the load on our support teams--please DO NOT perform any testing on, or create any, support tickets. Thanks!)
-                  </li>
-                  <li>Rate limit bypasses, with the exception of those that have a direct security impact</li>
-                  <li>Missing SPF/DMARC/DKIM settings on non-email DigitalOcean domains.</li>
-                  <li>Publicly known processor side-channel attacks</li>
-                  <li>Any physical attempts against DigitalOcean property or data centers</li>
-                  <li>Social engineering / phishing</li>
-                  <li class="mb-4">Previously known vulnerable 3rd party software (such as old Apache server) without a working POC</li>
-              </div>
+                <div>
+                    <h4 class="font-weight-bold mb-2">
+                        Out of Scope Vulnerabilities
+                    </h4>
+                    <p>
+                        All other DigitalOcean domains or properties not listed
+                        are out of scope, including subdomains. All domains or
+                        properties hosted on DigitalOcean and controlled by
+                        third parties are out of scope
+                    </p>
+                </div>
+                <div>
+                    <li>
+                        Support tickets (due to the load on our support
+                        teams--please DO NOT perform any testing on, or create
+                        any, support tickets. Thanks!)
+                    </li>
+                    <li>
+                        Rate limit bypasses, with the exception of those that
+                        have a direct security impact
+                    </li>
+                    <li>
+                        Missing SPF/DMARC/DKIM settings on non-email
+                        DigitalOcean domains.
+                    </li>
+                    <li>Publicly known processor side-channel attacks</li>
+                    <li>
+                        Any physical attempts against DigitalOcean property or
+                        data centers
+                    </li>
+                    <li>Social engineering / phishing</li>
+                    <li class="mb-4">
+                        Previously known vulnerable 3rd party software (such as
+                        old Apache server) without a working POC
+                    </li>
+                </div>
             </div>
         </div>
         <!-- Scope Section End -->
